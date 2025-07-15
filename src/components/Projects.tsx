@@ -1,15 +1,17 @@
 
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 export const Projects = () => {
   const projects = [
     {
       title: 'Social Media Dashboard',
       description: 'PyWeb Hackathon project featuring a comprehensive social media analytics dashboard with real-time data visualization.',
-      tech: ['HTML', 'CSS', 'Python', 'Flask'],
+      tech: ['HTML', 'CSS', 'JavaScript','Python', 'Flask'],
       category: 'Web Development',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
-      status: 'Completed'
+      status: 'Completed',
+      codeLink: 'https://github.com/Satyanarayana53/Social-Media-Dashboard',
+      demoLink: 'https://github.com/Satyanarayana53/Social-Media-Dashboard'
     },
     {
       title: 'Web Scraping Security Tool',
@@ -17,7 +19,9 @@ export const Projects = () => {
       tech: ['Python', 'MongoDB', 'Flask', 'BeautifulSoup'],
       category: 'Cybersecurity',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop',
-      status: 'Completed'
+      status: 'Completed',
+      codeLink: 'https://github.com/Satyanarayana53/Web-Scraping-Security-Tool',
+      demoLink:''
     },
     {
       title: 'Stock Market Price Prediction',
@@ -25,7 +29,9 @@ export const Projects = () => {
       tech: ['Python', 'Machine Learning', 'Data Science'],
       category: 'AI/ML',
       image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop',
-      status: 'Completed'
+      status: 'Completed',
+      codeLink: 'https://github.com/Satyanarayana53/Stock-Market-Price-Prediction',
+      demoLink:''
     },
     {
       title: 'LoginApp (Android)',
@@ -33,7 +39,9 @@ export const Projects = () => {
       tech: ['Java', 'Firebase', 'Android Studio'],
       category: 'Mobile Development',
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop',
-      status: 'Completed'
+      status: 'Completed',
+      codeLink: 'https://github.com/Satyanarayana53/LoginApp',
+      demoLink:''
     },
     {
       title: 'Calculator App (Android)',
@@ -41,7 +49,9 @@ export const Projects = () => {
       tech: ['Java', 'Android Studio', 'XML'],
       category: 'Mobile Development',
       image: 'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=500&h=300&fit=crop',
-      status: 'Completed'
+      status: 'Completed',
+      codeLink: 'https://github.com/Satyanarayana53/Calculator-App',
+      demoLink:''
     }
   ];
 
@@ -128,14 +138,28 @@ export const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3">
-                    <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-cyber-green/20 text-cyber-green rounded-lg hover:bg-cyber-green/30 transition-colors duration-300 text-sm">
-                      <Github size={16} />
-                      Code
-                    </button>
-                    <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-cyber-blue/20 text-cyber-blue rounded-lg hover:bg-cyber-blue/30 transition-colors duration-300 text-sm">
-                      <ExternalLink size={16} />
-                      Demo
-                    </button>
+                    {project.codeLink && (
+                      <a
+                        href={project.codeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-cyber-green/20 text-cyber-green rounded-lg hover:bg-cyber-green/30 transition-colors duration-300 text-sm"
+                      >
+                        <Github size={16} />
+                        Code
+                      </a>
+                    )}
+                    {project.demoLink && (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-cyber-blue/20 text-cyber-blue rounded-lg hover:bg-cyber-blue/30 transition-colors duration-300 text-sm"
+                      >
+                        <ExternalLink size={16} />
+                        Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

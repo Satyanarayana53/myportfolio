@@ -21,7 +21,8 @@ export const MatrixBackground = () => {
     window.addEventListener('resize', resizeCanvas);
 
     // Matrix characters
-    const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨ';
+    const chars = 'abcdefghijklmnopqrstuvwxyz0123456789$+-*/=%"\'' + '#&_(),.;:?!\\|{}<>[]^~アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨ';
+  
     const charArray = chars.split('');
 
     const fontSize = 14;
