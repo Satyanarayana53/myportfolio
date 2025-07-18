@@ -21,7 +21,7 @@ export const Projects = () => {
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop',
       status: 'Completed',
       codeLink: 'https://github.com/Satyanarayana53/Web-Scraping-Security-Tool',
-      demoLink:''
+      demoLink:'https://github.com/Satyanarayana53/Web-Scraping-Security-Tool'
     },
     {
       title: 'Stock Market Price Prediction',
