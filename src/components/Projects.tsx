@@ -11,7 +11,7 @@ export const Projects = () => {
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
       status: 'Completed',
       codeLink: 'https://github.com/Satyanarayana53/Social-Media-Dashboard',
-      demoLink: 'https://github.com/Satyanarayana53/Social-Media-Dashboard'
+      demoLink: 'https://0vc08z3x-5000.inc1.devtunnels.ms/'
     },
     {
       title: 'Web Scraping Security Tool',
