@@ -28,6 +28,10 @@ myportfoli/
 
 ---
 
+https://satyanarayana53.github.io/myportfolio/
+
+-----
+
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
@@ -43,5 +47,3 @@ npm run dev
 
 npm start
 
------
-https://satyanarayana53.github.io/myportfolio/
