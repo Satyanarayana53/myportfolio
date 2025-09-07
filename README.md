@@ -42,3 +42,6 @@ npm install
 npm run dev
 
 npm start
+
+-----
+https://satyanarayana53.github.io/myportfolio/
